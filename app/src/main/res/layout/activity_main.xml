@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <TextView android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:text="@string/_0"
+        android:gravity="center|end"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textColor="@android:color/background_light"
+        android:background="#000000"
+        android:layout_margin="2dp"
+        />
+
+    <Button android:id="@+id/clean"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/c"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/total"
+        />
+
+    <Button android:id="@+id/plusOrMinus"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/plusOrMinus"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/total"
+        android:layout_toEndOf="@id/clean"
+        />
+
+    <Button android:id="@+id/percent"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/percent"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/total"
+        android:layout_toEndOf="@id/plusOrMinus"
+        />
+
+    <Button android:id="@+id/division"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/division"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#FF9800"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/total"
+        android:layout_toEndOf="@id/percent"
+        />
+
+    <Button android:id="@+id/seven"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_7"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/clean"
+        />
+
+    <Button android:id="@+id/eight"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_8"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/plusOrMinus"
+        android:layout_toEndOf="@id/seven"
+        />
+
+    <Button android:id="@+id/nine"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_9"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/percent"
+        android:layout_toEndOf="@id/eight"
+        />
+
+    <Button android:id="@+id/multiplication"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/multiplication"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#FF9800"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/division"
+        android:layout_toEndOf="@id/nine"
+        />
+
+    <Button android:id="@+id/four"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_4"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/seven"
+        />
+
+    <Button android:id="@+id/five"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_5"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/eight"
+        android:layout_toEndOf="@id/four"
+        />
+
+    <Button android:id="@+id/six"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_6"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/nine"
+        android:layout_toEndOf="@id/five"
+        />
+
+    <Button android:id="@+id/minus"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/minus"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#FF9800"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/multiplication"
+        android:layout_toEndOf="@id/six"
+        />
+
+    <Button android:id="@+id/one"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_1"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/four"
+        />
+
+    <Button android:id="@+id/two"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_2"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/five"
+        android:layout_toEndOf="@id/one"
+        />
+
+    <Button android:id="@+id/three"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/_3"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/six"
+        android:layout_toEndOf="@id/two"
+        />
+
+    <Button android:id="@+id/plus"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+
+        android:text="@string/plus"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#FF9800"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/minus"
+        android:layout_toEndOf="@id/three"
+        />
+
+    <Button android:id="@+id/zero"
+        android:layout_width="204dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/_0"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/one"
+        />
+
+    <Button android:id="@+id/point"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/point"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#BEDDDA"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/three"
+        android:layout_toEndOf="@id/zero"
+        />
+
+    <Button android:id="@+id/equally"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/equally"
+        android:gravity="center"
+        android:textSize="@android:dimen/app_icon_size"
+        android:background="#FF9800"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="2dp"
+
+        android:layout_below="@id/plus"
+        android:layout_toEndOf="@id/point"
+        />
+</RelativeLayout>
